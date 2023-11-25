@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: -10px;
+}
+body
+{
+}
+.info ul
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 100px;
+    padding-top: 35px;
+    list-style: none;
+    z-index: 3;
+}
+.info a{
+    text-decoration: none;
+    color:white;
+    z-index: 2;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.background
+{
+    position: absolute;
+    background-image: url(download.png);
+    background-position: center;
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+    top: 0;
+    filter: blur(7px);
+}
+.text h1
+{
+    position: relative;
+    z-index: 4;
+    color:whitesmoke;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    letter-spacing: 1px;
+    font-size: 70px;
+    font-family:initial;
+    margin-bottom: 20px;
+    
+}
+.text p
+{
+    position: relative;
+    z-index: 4;
+    color:whitesmoke;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    word-spacing: 2px;
+    font-size: 40px;
+}
+.contain
+{
+    background-color: aliceblue;
+    width: 100%;
+    height: 45px;
+    max-width: 800px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.search
+{
+    position: relative;
+    z-index: 4;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    
+    
+}
+.location
+{
+    font-size: 20px;
+    color: red;
+    z-index: 4;
+    margin-right: 10px;
+}
+.caret-down
+{
+    display: flex;
+    position: absolute;
+    color:black;
+    z-index: 4;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-right: 240px;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+input
+{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+.line
+{
+    font-size: 30px;
+    color: grey;
+    z-index: 4;
+    margin-left: 30px;
+    align-items: center;
+    font-weight: bold;
+}
+.line input
+{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    width: 400px;
+    outline: none;
+}
+.images-container
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.image-box {
+    width: 340px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    margin: 0 5px;
+}
+.image-box:hover {
+    transform: scale(1.1); /* Increase size on hover (adjust as needed) */
+    transition: transform 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc; /* Optional: Add borders around images */
+    border-radius: 10px;
+}
+
+.text-beside-image {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+@media screen and (max-width: 600px) {
+    body {
+      width: 100%;
+    }
+  }
